@@ -1,0 +1,136 @@
+.header-container {
+    position: relative;
+}
+
+.overlay-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white; 
+    text-align: center;
+}
+.overlay-content button {
+    padding: 10px 20px;
+    background-color: #007bff; 
+    color: white; 
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    opacity: 1; 
+  }
+  
+  .overlay-content button:hover {
+    background-color: #0056b3; 
+  }
+  
+  .h2 {
+    text-align: center;
+  }
+  
+  .form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .label {
+    margin-bottom: 5px;
+  }
+  
+  .input[type="email"],
+  .input[type="password"] {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+  }
+  
+  .Signup-back{
+    background-color: #0a0b0e;
+    padding-left: 32px;
+    padding-right: 32px;
+    padding-top: 24px;
+    padding-bottom: 24px;
+    margin: 0%;
+    border: 0%;
+
+  }
+  .button:hover {
+    background-color: #0056b3;
+  }
+  .btn-Signup{
+    margin-top: 10px;
+    width: 300px;
+  }
+  .border-Signup{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin: 8px 16px;
+    
+  }
+  .text-Signup{
+    display: flex;
+    justify-content: flex-start;
+    font-size: 28px;
+    font-weight: 800;
+    padding: 0;
+    margin: 0;
+  }
+  .border-Signup-text{
+    display: flex;
+  }
+.Signup-textbox{
+    background-color: #393c44;
+    border-radius: 2px;
+  color: #fff;
+  padding: 10px;
+  background-color: #32353c;
+  outline: none;
+  font-size: 15px;
+  grid-area: input;
+  border: 1px solid #32353c;
+  width: 270px;
+  height: 40px;
+}
+.success-message {
+  text-align: center;
+  padding: 20px;
+  background-color: #393c44;
+  border: 1px solid #393c44;
+  border-radius: 4px;
+  margin: 20px;
+}
+
+.success-message h2 {
+  margin: 0 0 10px;
+}
+
+.success-message button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.success-message button:hover {
+  background-color: #45a049;
+}
+
+@media screen and (min-width: 768px) {
+    .Signup-textbox{
+        background-color: #393c44;
+        border-radius: 2px;
+      color: #fff;
+      padding: 10px;
+      background-color: #32353c;
+      outline: none;
+      font-size: 15px;
+      grid-area: input;
+      border: 1px solid #32353c;
+      width: 500px;
+      height: 40px;
+    }
+}

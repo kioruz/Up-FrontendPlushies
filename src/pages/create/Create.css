@@ -1,0 +1,221 @@
+.header-container {
+  position: relative;
+}
+
+
+
+.black-rectangle {
+  background-color: black;
+  color: white;
+  width: 350px;
+  height: 700px;
+  display: flex;
+  flex-direction: column; /* Default to column for mobile */
+  align-items: center;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+@media screen and (min-width: 768px) {
+  .black-rectangle {
+    width: 1000px;
+    height: 600px;
+    flex-direction: row; /* Change to row for desktop */
+  }
+}
+
+.left-content {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-right: 50px;
+}
+
+.image {
+  width: 100%;
+  height: auto; /* Ensure the image maintains aspect ratio */
+  max-height: 100%; /* Ensure the image does not overflow */
+  border-radius: 10px;
+  object-fit: cover; /* Ensures the image covers the container */
+}
+
+.right-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 100%; /* Ensure dropdowns take full width in mobile */
+}
+
+.dropdown {
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  width: 100%;
+  background-color: rgba(116, 116, 116, 0.521);
+  font-size: large;
+  font-weight: 1000;
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  color: whitesmoke;
+}
+.btn-login{
+  margin-top: 10px;
+  width: 300px;
+}
+.button:hover {
+  background-color: #0056b3;
+}
+.overlay-content button {
+  padding: 10px 20px;
+  background-color: #007bff; 
+  color: white; 
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  opacity: 1; 
+}
+
+.navbar-btns-crear {
+  top: 350px;
+  position: relative;
+  margin-bottom: 20px; /* Agregar un margen inferior para separarlo del borde */
+  margin-right: 20px; /* Agregar un margen derecho para separarlo del borde */
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Fondo semi-transparente */
+  z-index: 1000; /* Z-index alto para que esté encima de otros elementos */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.confirmation-content{
+  background-color: black;
+  padding: 20px;
+  border-radius: 20px;
+  justify-content: center;
+}
+.confirmation-buttons{
+  display: flex;
+  justify-content: space-between;
+}
+.btn-green{
+ 
+  background-color: green;
+  border-radius: 5px;
+  width: 100px;
+  height: 35px;
+  justify-content: left;
+  margin-top: 10px;
+  margin-left: 10px;
+}
+.btn-red{
+  margin-top: 10px;
+  margin-right: 10px;
+  background-color: red;
+  border-radius: 5px;
+  height: 35px;
+  width: 100px;
+  justify-content: right;
+}
+.content {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+/* Estilos específicos para el overlay superior */
+.overlay-top {
+  z-index: 1500; /* Z-index más alto para que esté arriba del otro overlay */
+}
+
+/* Estilos específicos para el overlay inferior */
+.overlay-bottom {
+  z-index: 1; /* Z-index más bajo para que esté debajo del otro overlay */
+}
+
+.overlay-content button:hover {
+  background-color: #0056b3; 
+}
+/*MOBILE*/
+@media (max-width: 768px) {
+  .black-rectangle {
+    height: auto; /* Adjust height for mobile */
+  }
+
+  .image {
+    width: 100%;
+    height: 200px; /* Adjust height for mobile */
+    object-fit: cover;
+    
+  }
+  .left-content {
+      flex: 1;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding-bottom: 20px;
+      padding-right: 0px;
+    }
+    .dropdown {
+      padding: 10px;
+      border-radius: 5px;
+      border: none;
+      width: 100%;
+      background-color: rgba(116, 116, 116, 0.521);
+      font-size: large;
+      font-weight: 1000;
+      text-align: center;
+      margin-top: 25px;
+      margin-bottom: 25px;
+    }
+    .confirmation-content{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      z-index: 200;
+    }
+    .confirmation-modal {
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 90%; /* Ancho del modal */
+      max-width: 400px; /* Ancho máximo del modal */
+      background-color: black;
+      border-radius: 10px;
+      border: 5px solid rgba(21, 21, 22, 0.459); /* Borde de 12px de ancho y color azul */
+      z-index: 200;
+    }
+    .btn-green{
+ 
+      margin-right: 50px;
+    }
+  
+    .confirmation-buttons{
+      display: flex;
+      justify-content: space-between;
+    }
+  
+}
+.Mapache{
+  min-height: 50vh;
+  background: linear-gradient(rgba(65, 63, 63, 0.521), rgba(5, 5, 5, 0.267)), url("../../assets/images/Mapache.jpeg") center/cover no-repeat;
+}
+.Gato{
+  min-height: 50vh;
+  background: linear-gradient(rgba(65, 63, 63, 0.521), rgba(5, 5, 5, 0.267)), url("../../assets/images/Gato.jpeg") center/cover no-repeat;
+}
+.Conejo{
+  min-height: 50vh;
+  background: linear-gradient(rgba(65, 63, 63, 0.521), rgba(5, 5, 5, 0.267)), url("../../assets/images/Conejo.jpeg") center/cover no-repeat;
+}

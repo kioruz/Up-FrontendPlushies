@@ -1,0 +1,144 @@
+.header-container {
+    position: relative;
+}
+
+.overlay-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white; 
+    text-align: center;
+}
+.overlay-content button {
+    padding: 10px 20px;
+    background-color: #007bff; 
+    color: white; 
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    opacity: 1; 
+  }
+  
+  .overlay-content button:hover {
+    background-color: #0056b3; 
+  }
+  
+  .h2 {
+    text-align: center;
+  }
+  .createaccount{
+    display: flex;
+    font-size:x-large;
+    font-weight: 600;
+    margin-top: 20px;
+    color: white;
+    background-color: #0056b3;
+    width: 150px;
+    height: 50px;
+    border-color: #0a0b0e;
+    padding: 20;
+  }
+  .form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .label {
+    margin-bottom: 5px;
+  }
+  
+  .input[type="email"],
+  .input[type="password"] {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+  }
+  
+  .login-back{
+    background-color: #0a0b0e;
+    padding-left: 32px;
+    padding-right: 32px;
+    padding-top: 24px;
+    padding-bottom: 24px;
+    margin: 0%;
+    border: 0%;
+
+  }
+  .button:hover {
+    background-color: #0056b3;
+  }
+  .btn-login{
+    margin-top: 10px;
+    width: 300px;
+  }
+  .btn-signup {
+    margin-top: 20px;
+    background-color: #027cff;
+    height: 50px;
+    width: 150px;
+    border-radius: 5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+  .btn-signup:hover{
+    background-color: #0056b3;
+  }
+  .border-login{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin: 8px 16px;
+    
+  }
+  .text-login{
+    display: flex;
+    justify-content: flex-start;
+    font-size: 28px;
+    font-weight: 800;
+    padding: 0;
+    margin: 0;
+  }
+  .border-login-text{
+    display: flex;
+  }
+.login-textbox{
+    background-color: #393c44;
+    border-radius: 2px;
+  color: #fff;
+  padding: 10px;
+  background-color: #32353c;
+  outline: none;
+  font-size: 15px;
+  grid-area: input;
+  border: 1px solid #32353c;
+  width: 270px;
+  height: 40px;
+}
+.back-login-square{
+    
+ 
+
+}
+@media screen and (min-width: 768px) {
+    .login-textbox{
+        background-color: #393c44;
+        border-radius: 2px;
+      color: #fff;
+      padding: 10px;
+      background-color: #32353c;
+      outline: none;
+      font-size: 15px;
+      grid-area: input;
+      border: 1px solid #32353c;
+      width: 500px;
+      height: 40px;
+    }
+}

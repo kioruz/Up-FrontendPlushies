@@ -1,0 +1,180 @@
+.Mapache-lista {
+    background-image: url("../../assets/images/Mapache.jpeg");
+}
+
+.Gato-lista {
+    background-image: url("../../assets/images/Gato.jpeg");
+}
+
+.Conejo-lista {
+    background-image: url("../../assets/images/Conejo.jpeg");
+}
+
+.imagen-lista {
+    width: 100px;
+    height: 100px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding-right: 10px;
+}
+
+.overlay-content-lista {
+    position: absolute;
+    margin-top: 10px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: aliceblue;
+    font-size: large;
+    font-weight: 500;
+}
+
+.background-icon-listall {
+
+        padding: 10px;
+        margin: 6px 6px 6px 6px;
+        background-color: #757575;
+        width: 370px;
+    
+}
+
+.row-content {
+    display: flex;
+    align-items: center;
+}
+
+.item-details {
+    padding-left: 20px;
+    height: 100px;
+    width: 365px;
+    flex: 1; /* Los detalles ocuparán todo el espacio disponible */
+    color: white;
+    font-size: small;
+}
+
+.item-details-email {
+    width: 200px; /* Ancho del contenedor del email */
+}
+
+.item-details-email a {
+    display: block; /* Para que el email ocupe una línea */
+}
+
+.two-row-lista {
+    display: flex;
+}
+
+.animal-info,
+.color-info {
+    flex: 1; /* Distribuye el espacio disponible de manera uniforme entre los elementos */
+}
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    text-align: center;
+    padding: 10px;
+    margin-top: auto;
+}
+
+.pagination__link {
+    margin: 0 5px;
+    padding: 5px 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    color: #007bff;
+}
+
+.pagination__link--active {
+    background-color: #007bff;
+    color: white;
+}
+
+.pagination__link--disabled {
+    color: #ddd;
+    cursor: not-allowed;
+}
+
+.boton-paginacion-texto-lista {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.boton-paginacion-lista {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.boton-paginacion-lista:hover {
+    background-color: #f2f2f2;
+}
+
+.square-listall-back {
+    min-height: 700px;
+    display: flex;
+    flex-direction: column;
+}
+
+.pagination-container {
+    text-align: center; /* Centra el botón de paginación horizontalmente */
+    padding: 10px; /* Añade algo de espacio alrededor del botón de paginación */
+}
+
+/* MOBILE */
+@media screen and (max-width: 720px) {
+    .imagen-lista {
+        width: 80px;
+    }
+
+    .item-details.single-item {
+        padding-left: 20px;
+        height: 100px;
+        width: 100%; /* Cambiado a 100% para ocupar todo el ancho disponible */
+        flex: 1; /* Los detalles ocuparán todo el espacio disponible */
+        color: white;
+        font-size: small;
+    }
+
+    .row-content.single-row {
+        flex-direction: column; /* Cambiado a columna para mostrar solo un elemento por fila */
+    }
+
+    .background-icon-listall {
+        margin: 5px;
+    }
+
+    .table-container {
+        flex: 1;
+        max-height: 700px; /* Define una altura máxima para el contenedor */
+        overflow-y: auto; /* Permite el desplazamiento vertical */
+    }
+
+    .square-listall-back {
+        flex: 1;
+        min-height: 700px;
+    }
+
+    .overlay-content-lista {
+        margin-top: 0;
+    }
+
+    .boton-paginacion-texto-lista {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 50px;
+        margin-bottom: 0px;
+        height: 50px;
+        width: 100%;
+    }
+}

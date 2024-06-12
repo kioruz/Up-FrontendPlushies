@@ -1,0 +1,126 @@
+.table-container {
+    
+    width: auto;
+    overflow-x: auto;
+  }
+  
+  table {
+    width: auto;
+    border-collapse: collapse;
+  }
+  
+  th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+  }
+  .tr-lista{
+    top: 500%;
+  }
+  .tabla-lista{
+   background-color: black;
+   
+  }
+  .contenedor-tabla-lista
+  {
+    width: 800px;
+    height: 720px;
+  }
+  .list-item {
+    flex: 1 1 calc(20% - 10px);
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; 
+    color: aliceblue;
+}
+.overlay-content-lista {
+    position: absolute;
+    margin-top: 10px; 
+    top: 50%; 
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: aliceblue;
+    font-size: large;
+    font-weight: 500;
+}
+.boton-paginacion-lista{
+    color: black;
+    padding-left: 10px;
+    margin-top: 78px;
+    margin-bottom: 10px;
+    font-weight: 600;
+    margin-right: 20px;
+    border: red;
+}
+
+  .list-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  
+  .list-item div {
+    margin-bottom: 5px; 
+}
+  
+  
+  .pagination {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+    margin-top: 20px;
+  }
+  
+  .pagination__link {
+    margin: 0 5px;
+    padding: 5px 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    color: #007bff;
+  }
+  
+  .pagination__link--active {
+    background-color: #007bff;
+    color: white;
+  }
+  
+  .pagination__link--disabled {
+    color: #ddd;
+    cursor: not-allowed;
+  }
+.Mapache-lista{
+    
+    width: 60px; /* Ajusta el ancho al tamaño de la imagen */
+    height: 50px; /* Ajusta el alto al tamaño de la imagen */
+    
+    background-image: url("../../assets/images/Mapache.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover; /* Ajusta el tamaño de la imagen para cubrir todo el contenedor */
+    background-position: center; /* Centra la imagen en el contenedor */
+}
+
+
+.Gato-lista{
+    width: 60px; /* Ajusta el ancho al tamaño de la imagen */
+    height: 50px; /* Ajusta el alto al tamaño de la imagen */
+    
+    background-image: url("../../assets/images/Gato.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover; /* Ajusta el tamaño de la imagen para cubrir todo el contenedor */
+    background-position: center; /* Centra la imagen en el contenedor */
+}
+.Conejo-lista {
+    width: 60px; /* Ajusta el ancho al tamaño de la imagen */
+    height: 50px; /* Ajusta el alto al tamaño de la imagen */
+    
+    background-image: url("../../assets/images/Conejo.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover; /* Ajusta el tamaño de la imagen para cubrir todo el contenedor */
+    background-position: center; /* Centra la imagen en el contenedor */
+}

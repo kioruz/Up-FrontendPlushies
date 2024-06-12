@@ -1,0 +1,220 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@321&display=swap');
+
+
+.libre-franklin-plushies {
+  font-family: "Libre Franklin", sans-serif;
+  font-optical-sizing: auto;
+  font-weight:500 ;
+  font-style: italic;
+}
+.Mapache-plushies {
+    background-image: url("../../assets/images/Mapache.jpeg");
+}
+
+.Gato-plushies {
+    background-image: url("../../assets/images/Gato.jpeg");
+}
+
+.Conejo-plushies {
+    background-image: url("../../assets/images/Conejo.jpeg");
+}
+
+.imagen-plushies {
+    width: 100px;
+    height: 100px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding-right: 10px;
+}
+
+.overlay-content-plushies {
+    position: absolute;
+    margin-top: 10px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: aliceblue;
+    font-size: large;
+    font-weight: 500;
+}
+
+.background-icon-plushiesll {
+    padding: 10px;
+    margin: 6px 6px 6px 6px;
+    background-color: #757575;
+    width: 370px;
+}
+
+.row-content {
+    display: flex;
+    align-items: center;
+}
+
+.item-details {
+    padding-left: 20px;
+    height: 100px;
+    width: 365px;
+    flex: 1; 
+    color: white;
+    font-size: small;
+}
+
+.item-details-email {
+    width: 200px; 
+}
+
+.item-details-email a {
+    display: block; 
+}
+
+.two-row-plushies {
+    display: flex;
+}
+.btn-eliminar {
+    background-color: black ;
+    border: 3px solid #504f4f96; 
+    border-radius: 10px;
+    color: white; 
+    padding: 1px 1px; 
+    margin-left: 0;
+    float: right;
+    cursor: pointer; 
+    width: 80px;
+    font-family: Arial;
+}
+
+.btn-eliminar:hover {
+    background-color: rgba(43, 41, 41, 0.733); 
+}
+
+.animal-info,
+.color-info {
+    flex: 1; 
+}
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    text-align: center;
+    padding: 10px;
+    margin-top: auto;
+}
+
+.pagination__link {
+    margin: 0 5px;
+    padding: 5px 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    color: #007bff;
+}
+
+.pagination__link--active {
+    background-color: #007bff;
+    color: white;
+}
+
+.pagination__link--disabled {
+    color: #ddd;
+    cursor: not-allowed;
+}
+
+.boton-paginacion-texto-plushies {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.boton-paginacion-plushies {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.boton-paginacion-plushies:hover {
+    background-color: #f2f2f2;
+}
+
+.square-plushiesll-back {
+    min-height: 700px;
+    display: flex;
+    flex-direction: column;
+}
+
+.pagination-container {
+    text-align: center; /* Centra el botón de paginación horizontalmente */
+    padding: 10px; /* Añade algo de espacio alrededor del botón de paginación */
+}
+
+/* MOBILE */
+@media screen and (max-width: 720px) {
+    .imagen-plushies {
+        width: 80px;
+    }
+
+    .item-details.single-item {
+        padding-left: 20px;
+        height: 100px;
+        width: 100%; /* Cambiado a 100% para ocupar todo el ancho disponible */
+        flex: 1; /* Los detalles ocuparán todo el espacio disponible */
+        color: white;
+        font-size: small;
+    }
+
+    .row-content.single-row {
+        flex-direction: column; /* Cambiado a columna para mostrar solo un elemento por fila */
+    }
+
+    .background-icon-plushiesll {
+        margin: 5px;
+    }
+
+    .table-container {
+        flex: 1;
+        max-height: 700px; /* Define una altura máxima para el contenedor */
+        overflow-y: auto; /* Permite el desplazamiento vertical */
+    }
+
+    .square-plushiesll-back {
+        flex: 1;
+        min-height: 700px;
+    }
+
+    .overlay-content-plushies {
+        margin-top: 0;
+    }
+
+    .boton-paginacion-texto-plushies {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 50px;
+        margin-bottom: 0px;
+        height: 50px;
+        width: 100%;
+    }
+    .btn-eliminar {
+        background-color: white ;
+        border: 2px solid #1011119a; /* Ajusta el grosor del borde */
+        margin: 0;
+        float: right;
+        border-radius: 15%;
+        color: black; /* Cambia el color del texto a blanco para mayor contraste */
+        font-weight: bold;
+        cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+        font-weight: bold; /* Añade negrita al texto para mayor énfasis */
+    }
+    
+    .btn-eliminar:hover {
+        background-color: rgb(133, 130, 130); /* Cambia el color de fondo al pasar el cursor */
+    }
+    
+}

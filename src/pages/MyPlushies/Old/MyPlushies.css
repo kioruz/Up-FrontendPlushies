@@ -1,0 +1,119 @@
+
+.Mapache-plushies{
+    
+    background: linear-gradient(rgba(65, 63, 63, 0.521), rgba(5, 5, 5, 0.267)), url("../../assets/images/Mapache.jpeg") center/cover no-repeat;
+}
+.Gato-plushies{
+    
+    background: linear-gradient(rgba(65, 63, 63, 0.521), rgba(5, 5, 5, 0.267)), url("../../assets/images/Gato.jpeg") center/cover no-repeat;
+}
+.Conejo-plushies{
+    
+    background: linear-gradient(rgba(65, 63, 63, 0.521), rgba(5, 5, 5, 0.267)), url("../../assets/images/Conejo.jpeg") center/cover no-repeat;
+}
+
+.overlay-content-my {
+
+    position: absolute;
+    margin-top: 10px; 
+    top: 50%; 
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+   
+}
+
+.services {
+    flex: 1;
+}
+
+.item-list-plushies {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 5x5 grid */
+    gap: 10px;
+}
+
+.pagination-container-plushies {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    top: 80%; /* Centra verticalmente */
+    left: 50%; /* Alinea a la mitad del ancho de la pantalla */
+    transform: translate(-50%, -50%); /* Corrige la posición a la mitad del ancho y alto */
+    margin-top: 20px;
+}
+
+.pagination {
+    display: flex;
+    list-style: none;
+    padding: 0;
+}
+
+.pagination__link {
+    margin: 0 5px;
+    padding: 5px 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    color: #007bff;
+}
+.square-plushies .item{
+    padding-top: 20px;
+}
+.pagination__link--active {
+    background-color: #007bff;
+    color: white;
+}
+
+.pagination__link--disabled {
+    color: #ddd;
+    cursor: not-allowed;
+}
+
+
+/* MyPlushies.css */
+
+.item {
+    position: relative;
+    cursor: pointer;
+    transition: background-color 0.5s ease-in-out; /* Adding transition for background color */
+  }
+  
+  .item-title {
+    opacity: 0;
+    transform: scale(0.5);
+    transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+  }
+  
+  .item .visible {
+    opacity: 1;
+    transform: scale(1);
+  }
+  .text-image-plushies{
+    margin: 0 0 0 0;
+    padding: 0;
+    text-align: center;
+  }
+  .clicked {
+    background-color: black;
+  }
+  .pushies-square{
+    height: 200px;
+    width: 200px;
+    padding: 0;
+  }
+
+  .plushies-table {
+    position: absolute;
+    top: 50%; /* Centra verticalmente */
+    left: 50%; /* Alinea a la mitad del ancho de la pantalla */
+    transform: translate(-50%, -50%); /* Corrige la posición a la mitad del ancho y alto */
+    width: 800px;
+    height: 750px;
+    
+}
+
+  .size{
+    height: 1080px;
+  }
